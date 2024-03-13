@@ -1,0 +1,145 @@
+﻿/* Navbar.css */
+
+.header {
+    position: fixed;
+    width: 160px;
+    background-color: #0F4C81;
+    height: 125%;
+    z-index: 1;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    display: block;
+    padding-top: 60px;
+    padding-right: 40px;
+    margin: 0;
+}
+
+
+.nav__logo {
+    border-radius: 50%;
+    height: 150px;
+    width: 130px;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: absolute;
+        width: 160px;
+        background-color: #0F4C81;
+        height: 100%;
+        z-index: 1;
+        text-align: center;
+        font-size: 22px;
+        color: black;
+        display: block;
+        padding-top: 60px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav__menu {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .nav__list {
+        row-gap: 1rem;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    list-style-type: none;
+}
+
+.content_columns {
+    column-count: 2;
+    
+}
+
+.button_bottom {
+    display: block;
+    color: #0F4C81;
+    text-align: center;
+    font-weight: 900;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+.dev-icons{
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 30px 0px 30px 0px ;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #0F4C81;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.button_bottom:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.inline_item{
+    display:inline;
+    padding-right:10px;
+    overflow-x: visible;
+}
+
+.social-icons {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+}
+
+
+.nav__link {
+    
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+    text-decoration: none;
+}   
+
+    .nav__link:hover {
+        color: var(--first-color);
+    }
+
+
+.nav__menu_mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+}
+
+@media screen and (min-width: 1150px) {
+    .nav {
+        height: calc(var(--header-height) + 1rem);
+    }
+}
