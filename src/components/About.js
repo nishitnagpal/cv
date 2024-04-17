@@ -78,7 +78,7 @@ const About = () => {
                 <a class="social-icons" href="http://www.linkedin.com/in/nishitnagpal">
                     <i class= "fa fa-linkedin"></i>
                 </a>
-                <a class="social-icons" href="https://github.com/nishitnagpal/ideas">
+                <a class="social-icons" href="https://github.com/nishitnagpal">
                     <i class="fa fa-github"></i>
                 </a>
             </p>
